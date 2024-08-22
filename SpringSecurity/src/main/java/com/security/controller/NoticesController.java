@@ -4,11 +4,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class SimpleController {
+public class NoticesController {
 	
-	@GetMapping("/hello")
-	public String hello() {
-		return "Spring with Security";
+	@GetMapping("/notices")
+	public String getNoticeDetails() {
+		return "Notice page";
 	}
 
 }
